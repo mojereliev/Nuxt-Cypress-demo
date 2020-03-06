@@ -31,8 +31,8 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 1. Add Auth0 authentication using https://github.com/nuxt/example-auth0 as an example
 2. Make page 'Create event' accessible only by authenticated users
-3. If not authenticated user tries to open a page which requires authentication, the user should be prompted for login and after successful authentication shown original page
-4. Add new tests to cover new functionality
+3. If not authenticated user tries to open a page which requires authentication, the user should be prompted for login and after successful authentication shown original page (hint: https://auth0.com/docs/protocols/oauth2/redirect-users, you can pass redirect url as open parameter - security is not a priority for this test task)
+4. Add new tests to cover new functionality (hint: Cypress does not support redirects)
 
 The aim of this assigmnet is to validate your Vue/Nuxt knowledge, ability to figure out how authentication and testing work.
 
