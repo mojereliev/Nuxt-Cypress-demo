@@ -5,6 +5,7 @@
 </template>
 <script>
 export default {
+  middleware: 'auth',
   head() {
     return {
       title: 'Create an Event',

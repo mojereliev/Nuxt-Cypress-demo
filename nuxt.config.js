@@ -48,7 +48,8 @@ module.exports = {
    */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/auth'
   ],
   /*
    ** Axios module configuration
@@ -56,6 +57,20 @@ module.exports = {
    */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
+  },
+
+  auth: {
+    redirect: {
+      login: '/auth/signed-in', // redirect user when not connected
+      callback: '/'
+    },
+    strategies: {
+      local: false,
+      auth0: {
+        domain: process.env.AUTH0_DOMAIN,
+        client_id: process.env.AUTH0_CLIENT_ID
+      }
+    }
   },
 
   /*

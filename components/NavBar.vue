@@ -11,6 +11,11 @@
       <nuxt-link to="/event/create">
         Create
       </nuxt-link>
+
+      <template v-if="$auth.loggedIn">
+        |
+        <a v-if="$auth.loggedIn" @click="$auth.logout()">Sign Off</a>
+      </template>
     </nav>
   </div>
 </template>
