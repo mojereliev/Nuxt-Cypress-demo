@@ -10,7 +10,7 @@
     "start": "cross-env NODE_ENV=production node --require dotenv/config server/index.js",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "e2e": "cypress run",
+    "e2e": "cypress run --browser chrome",
     "run:e2e": "start-server-and-test start http://localhost:8080 e2e",
     "e2e:open": "cypress open"
   },

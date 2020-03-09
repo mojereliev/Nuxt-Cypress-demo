@@ -4,6 +4,26 @@
 
 ## Build Setup
 
+create .env in root with auth0 data
+
+```
+AUTH0_CLIENT_ID=""
+AUTH0_DOMAIN=""
+```
+
+create cypress.env.json in root with auth0 data
+
+```
+{
+  "auth_audience": "https://yourdomain.auth0.com/api/v2/",
+  "auth_url": "https://yourdomain.auth0.com/oauth/token",
+  "auth_client_id": "",
+  "auth_client_secret": "",
+  "auth_username": "",
+  "auth_password": ""
+}
+```
+
 ``` bash
 # install dependencies
 $ npm run install
